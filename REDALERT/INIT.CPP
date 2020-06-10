@@ -549,7 +549,7 @@ bool Select_Game(bool fade)
 	PlayerWins = false;
 	PlayerLoses = false;
 	Session.ObiWan = false;
-	Debug_Unshroud = false;
+	//Debug_Unshroud = false; //Terra_Ex - Shroud Remover
 	Map.Set_Cursor_Shape(0);
 	Map.PendingObjectPtr = 0;
 	Map.PendingObject = 0;
@@ -1800,7 +1800,7 @@ bool Parse_Command_Line(int argc, char * argv[])
 	Special.Init();
 
 	Debug_Map = false;
-	Debug_Unshroud = false;
+	//Debug_Unshroud = false; //Terra_Ex - Shroud Remover
 
 	for (int index = 1; index < argc; index++) {
 		char * string;		// Pointer to argument.

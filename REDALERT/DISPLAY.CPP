@@ -2386,7 +2386,7 @@ void DisplayClass::Redraw_Icons(void)
 					*/
 					//if (!cellptr->IsVisible && !Debug_Unshroud) {
 					if (!cellptr->Is_Visible(PlayerPtr) && !Debug_Unshroud) {	// Use PlayerPtr since we won't be rendering in MP. ST - 3/6/2019 2:49PM
-						IsShadowPresent = true;
+						IsShadowPresent = false; //Terra_Ex - Shroud Remover
 					}
 				}
 			}
